@@ -1,4 +1,4 @@
-**[****이장의 내용]**
+**[****제 1 장]**
 
 - 자바 8을      구성하는 핵심사항
 
@@ -28,7 +28,7 @@
 
 - 프로그래밍 언어 생태계와 환경 변화
 
-- - ![img](file:///C:/Users/user/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
+![img](file:///C:/Users/user/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg)
 
  
 
@@ -201,9 +201,5 @@
 - **![img](file:///C:/Users/user/AppData/Local/Temp/msohtmlclip1/01/clip_image026.jpg)**
 
 ![img](file:///C:/Users/user/AppData/Local/Temp/msohtmlclip1/01/clip_image028.jpg)
-
-
-
-
 
 질문) 함수형 프로그래밍에 자세한 설명 부탁드려욥
