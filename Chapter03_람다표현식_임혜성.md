@@ -26,12 +26,12 @@
 결과적으로, **JAVA8 이전의 자바로 할 수 없었던 것을 새롭게 제공하는 것이 아니라 코드를 좀 더 쉽게 구현함으로써, 코드가 간결하고 유연해짐에 초점을 둠**
 
 * 간단한 예제
-	* ![return_string_type](C:\Users\user\Documents\java8\ch3 이미지\return_string_type.jpg)
+	* ![return_string_type](https://user-images.githubusercontent.com/40616436/65386848-6b27d800-dd7b-11e9-8f13-d6635767435a.jpg)
 * 람다의 표현식
-	* ![image3_1](C:\Users\user\Documents\java8\ch3 이미지\image3_1.jpg)
+	* ![image3_1](https://user-images.githubusercontent.com/40616436/65386842-606d4300-dd7b-11e9-9f2b-69af2fba70d6.jpg)
 
 * 예제 3-1 JAVA8의 유효한 람다 표현식
-	* ![example3_1](C:\Users\user\Documents\java8\ch3 이미지\example3_1.jpg)
+	* ![example3_1](https://user-images.githubusercontent.com/40616436/65386838-5a776200-dd7b-11e9-8ec7-52c059646265.jpg)
 
 
 
@@ -47,7 +47,7 @@
 		int compare(T o1, T o2);
 }
 * 함수형 인터페이스 사용한 람다 표현식과 익명 클래스
-		* ![선언 후 람다 사용](C:\Users\user\Documents\java8\ch3 이미지\선언 후 람다 사용.jpg)
+		* ![선언 후 람다 사용](https://user-images.githubusercontent.com/40616436/65386835-50edfa00-dd7b-11e9-8eac-5f6b1938b12e.jpg)
 
 ### 3.2.2 함수 디스크립터
 
@@ -68,7 +68,7 @@
 ## 3.3 람다 활용: 실행 어라운드 패턴
 
 * 람다와 동작 파라미터화로 유연하고 간결한 코드를 구현 예제
-	* ![실행 어라운드 패턴](C:\Users\user\Documents\java8\ch3 이미지\실행 어라운드 패턴.jpg)
+	* ![실행 어라운드 패턴](https://user-images.githubusercontent.com/40616436/65386832-492e5580-dd7b-11e9-84f9-ec5ec2b8bdf3.jpg)
 
 
 
@@ -102,7 +102,7 @@
 
 * 기본형 특화를 통해 박싱 진행하거나 진행 안함. 
 	* 어라운드 패턴에서 정의한 함수형 인터페이스를 JAVA8이 제공한 함수형 인터페이스 활용
-		* ![function 그림](C:\Users\user\Documents\java8\ch3 이미지\function 그림.jpg)
+		* ![function 그림](https://user-images.githubusercontent.com/40616436/65386830-416eb100-dd7b-11e9-8677-c620b7827812.jpg)
 
 
 
@@ -112,7 +112,7 @@
 
 * 대상 형식 : 람다가 전달될 메서드 파라미터나 람다가 할당되는 변수에서 기대되는 람다 표현식의 형식 (Predicate, Consumer..Runnable)
 * 람다의 시그니처와 함수형 인터페이스의 시그니처가 동일한가?!
-* Ex) <img src="C:\Users\user\Documents\java8\ch3 이미지\KakaoTalk_20190922_171632859.jpg" alt="KakaoTalk_20190922_171632859" style="zoom:50%;" />
+* Ex) ![KakaoTalk_20190922_171632859](https://user-images.githubusercontent.com/40616436/65386828-37e54900-dd7b-11e9-915f-7f9795a90456.jpg)
   *  filter 메소드를 확인 -> filter(List<Apple> inventotry, Predicate<Apple> p)
     * 즉, 람다 표현식의 대상 형식은 Predicate라는 것을 확인
   * Predicate<Apple> 인터페이스의 추상 메서드는 무엇인가?
@@ -150,7 +150,7 @@
 * 람다 표현식의 람다 캡쳐링
   * 외부에서 정의된 변수를 사용할 수 있음.
     * 이 때, 변수는 final로 선언되어 있건, final로 선언된 변수와 똑같이 사용되어야 함
-    * ![KakaoTalk_20190922_180932805](C:\Users\user\Documents\java8\ch3 이미지\KakaoTalk_20190922_180932805.jpg)
+    * ![KakaoTalk_20190922_180932805](https://user-images.githubusercontent.com/40616436/65386823-2d2ab400-dd7b-11e9-993d-a80e54aaf56e.jpg)
 * 지역 변수의 제약
   * 인스턴스 변수는 힙, 지역 변수는 스택
   * 제약 이유
@@ -173,14 +173,14 @@
       * 실제로 메서드를 호출하는 것이 아니므로 ()는 필요없음.
       * 결과적으로, **Apple::getWeight** == **(Apple a) -> a.getWeight()**
 * 람다와 메서드 레퍼런스의 단축 표현 예제
-  * ![KakaoTalk_20190922_183243335](C:\Users\user\Documents\java8\ch3 이미지\KakaoTalk_20190922_183243335.jpg)
+  * ![KakaoTalk_20190922_183243335](https://user-images.githubusercontent.com/40616436/65386817-200dc500-dd7b-11e9-850e-f572d1b2ce97.jpg)
 * 메서드 레퍼런스는 기능이 아닌 하나의 메서드를 참조하는 람다를 편리하게 표현할 수 있는 문법으로 간주
 * 메서드 레퍼런스 만들기
   * Integer의 parseInt 메서드 => Integer::parseInt
   * String의 length 메서드 =>  String::length
   * Test t에 getValue 메서드 사용 => t::getValue
 * 람다 표현식을 메서드 레퍼런스로 변환하기
-* ![KakaoTalk_20190922_184959368](C:\Users\user\Documents\java8\ch3 이미지\KakaoTalk_20190922_184959368.jpg)
+* ![KakaoTalk_20190922_184959368](https://user-images.githubusercontent.com/40616436/65386813-18e6b700-dd7b-11e9-89ae-864c912a1535.jpg)
 
 ### 3.6.2 생성자 레퍼런스
 
@@ -200,7 +200,7 @@
   * 사용하려는 생성자 레퍼런스와 일치하는 시그너처를 갖는 함수형 인터페이스가 필요.
   * JAVA8에서 제공하는 함수형 인터페이스가 없을 시 직접 함수형 인터페스를 구현해야 함.
     * EX) 세개의 인수를 갖는 생성자 레퍼런스
-      * ![KakaoTalk_20190922_192736532](C:\Users\user\Documents\java8\ch3 이미지\KakaoTalk_20190922_192736532.jpg)
+      * ![KakaoTalk_20190922_192736532](https://user-images.githubusercontent.com/40616436/65386808-0b313180-dd7b-11e9-9ffe-82c6d8f0a9ec.jpg)
 
 
 
@@ -216,12 +216,12 @@
   * void sort(Comparator<? super E> c)의 시그너처를 갖음
     - 이 방식은 객체 안에 동작을 포함시키는 방식으로 다양한 전략을 전달할 수 있음
   * 1단계 코드
-    * ![KakaoTalk_20190922_194142582](C:\Users\user\Documents\java8\ch3 이미지\KakaoTalk_20190922_194142582.jpg)
+    * ![KakaoTalk_20190922_194142582](https://user-images.githubusercontent.com/40616436/65386803-010f3300-dd7b-11e9-8164-1473680a82ce.jpg)
 
 ### 3.7.2 2단계: 익명 클래스 사용
 
 * Comparator를 한번만 사용하므로 익명 클래스 이용
-  * ![KakaoTalk_20190922_194551156](C:\Users\user\Documents\java8\ch3 이미지\KakaoTalk_20190922_194551156.jpg)
+  * ![KakaoTalk_20190922_194551156](https://user-images.githubusercontent.com/40616436/65386778-b1c90280-dd7a-11e9-9a00-93f5070f3229.jpg)
 
 ### 3.7.3 3단계: 람다 표현식 사용
 
@@ -288,12 +288,12 @@
   * andThen(A.andThen(B))
     * A에서 B 순으로 실행
     * EX)
-      * ![KakaoTalk_20190922_203855045](C:\Users\user\Documents\java8\ch3 이미지\KakaoTalk_20190922_203855045.jpg)
+      * ![KakaoTalk_20190922_203855045](https://user-images.githubusercontent.com/40616436/65386763-93fb9d80-dd7a-11e9-9358-a5cb8c4adce0.jpg)
         * f 후 g
   * compose(A.compose(B))
     * B에서 A 순으로 실행
     * EX)
-      * ![KakaoTalk_20190922_203923737](C:\Users\user\Documents\java8\ch3 이미지\KakaoTalk_20190922_203923737.jpg)
+      * ![KakaoTalk_20190922_203923737](https://user-images.githubusercontent.com/40616436/65386759-880fdb80-dd7a-11e9-976b-adbfffc6d3a1.jpg)
         * g 후 f
 
 ## 3.9 수학을 좋아하지 않으므로 패스
